@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
                 settings.setOnClickListener {
                 val intent1 = Intent(this, ActivitySettings::class.java)
                 startActivity(intent1)
-
-
-
                     }
 
             this.start = findViewById(R.id.start)
@@ -38,5 +35,23 @@ class MainActivity : AppCompatActivity() {
                     val intent2 = Intent(this, ActivityGame::class.java)
                     startActivity(intent2)
                 }
+
+                
+                val mediaPlayer = MediaPlayer.create(this, R.raw.diewithasmile)
+        mediaPlayer.start()
+        mediaPlayer.isLooping = true
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer?.pause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mediaPlayer?.start()
+    }
+
         }
     }
