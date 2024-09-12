@@ -6,36 +6,45 @@
     android:layout_height="match_parent">
 
 
-    <View
-        android:id="@+id/whitebar"
-        android:layout_width="412dp"
-        android:layout_height="729dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <View
-        android:id="@+id/app"
-        android:layout_width="411dp"
-        android:layout_height="622dp"
+        android:layout_width="wrap_content"
+        android:layout_height="760dp"
         android:background="#FFF8E8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="#674636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149"/>
+
+
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:text="SETTINGS"
+        android:text="@string/settings"
         android:textSize="45sp"
         android:textColor="#BC9F8B"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,37 +54,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#674636"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
 
-    <Switch
-        android:id="@+id/musiconoff"
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="true"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:switchMinWidth="56dp"
-        android:text="Volume:"
-        android:textOff="@string/off"
-        android:textOn="@string/on"
+        android:text="@string/music"
         android:textColor="#4c4c4c"
-        android:textSize="24sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="@string/volume"
+        android:textColor="#4c4c4c"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
 
     <SeekBar
         android:id="@+id/seekBar2"
@@ -87,26 +95,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.435" />
-
-    <Switch
-        android:id="@+id/volumeonoff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:fontFamily="@font/baloo_bhaijaan"
-        android:switchMinWidth="56dp"
-        android:text="Music:"
-        android:textOff="@string/off"
-        android:textOn="@string/on"
-        android:textColor="#4c4c4c"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <SeekBar
         android:id="@+id/Music"
@@ -128,8 +116,8 @@
         android:layout_height="wrap_content"
         android:checked="true"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:switchMinWidth="56dp"
-        android:text="Dark Mode:"
+        android:padding="16dp"
+        android:text="@string/dark_mode"
         android:textColor="#4c4c4c"
         android:textOff="@string/off"
         android:textOn="@string/on"
@@ -141,6 +129,19 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
+    <Button
+        android:id="@+id/settingstohome"
+        android:layout_width="155dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="628dp"
+        android:backgroundTint="#EDE3C6"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
