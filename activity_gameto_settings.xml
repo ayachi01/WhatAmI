@@ -6,37 +6,29 @@
     android:layout_height="match_parent">
 
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+    <View
+        android:layout_width="407dp"
+        android:layout_height="775dp"
+        android:background="#FFF8E8"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="760dp"
-                android:background="#FFF8E8"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"/>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="3dp"
-                android:background="#674636"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.149"/>
-
-
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="#674636"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
 
 
     <TextView
@@ -53,9 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
-
-
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -86,7 +75,7 @@
         app:layout_constraintVertical_bias="0.386" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/volume"
         android:layout_width="308dp"
         android:layout_height="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +86,7 @@
         app:layout_constraintVertical_bias="0.435" />
 
     <SeekBar
-        android:id="@+id/Music"
+        android:id="@+id/music"
         android:layout_width="308dp"
         android:layout_height="18dp"
         android:maxHeight="16dp"
@@ -134,9 +123,9 @@
         android:layout_width="155dp"
         android:layout_height="69dp"
         android:layout_marginTop="628dp"
-        android:backgroundTint="#EDE3C6"
+        android:backgroundTint="#E9D0A5"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,14 +137,14 @@
         android:layout_width="155dp"
         android:layout_height="69dp"
         android:layout_marginTop="628dp"
-        android:backgroundTint="#EDE3C6"
+        android:backgroundTint="#E9D0A5"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:text="Quit"
+        android:text="@string/quit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.354" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
