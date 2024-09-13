@@ -8,4 +8,8 @@
     <string name="dark_mode">Dark Mode:</string>
     <string name="back">Back</string>
     <string name="app_name">MyApplication\n</string>
+    <string name="quit">quit</string>
+    <string name="play">Play</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="what_am_i">WHAT AM I?</string>
 </resources>
