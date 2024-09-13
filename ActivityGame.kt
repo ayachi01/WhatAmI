@@ -1,3 +1,5 @@
+//...Main concept of game
+
 package com.example.myapplication
 
 import android.annotation.SuppressLint
