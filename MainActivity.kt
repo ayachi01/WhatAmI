@@ -1,3 +1,5 @@
+//... Home and First Page of App
+
 package com.example.myapplication
 
 import android.annotation.SuppressLint
