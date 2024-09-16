@@ -1,3 +1,5 @@
+// com.example.myapplication(androidTest) folder
+
 package com.example.myapplication
 
 import androidx.test.platform.app.InstrumentationRegistry
