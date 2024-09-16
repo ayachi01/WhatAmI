@@ -1,0 +1,10 @@
+<resources>
+    <!-- Dark Mode Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
