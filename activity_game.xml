@@ -4,69 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:circularflow_defaultAngle="100">
+    android:visibility="visible"
+    app:circularflow_defaultAngle="100"
+    tools:visibility="visible">
 
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/app"
-        android:layout_width="410dp"
-        android:layout_height="775dp"
-        android:background="#FFF8E8"
+        android:layout_width="1276dp"
+        android:layout_height="134dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-        <View
-            android:id="@+id/brownbar"
-            android:layout_width="wrap_content"
-            android:layout_height="3dp"
-            android:background="#674636"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
-            android:layout_width="300dp"
-            android:layout_height="3dp"
-            android:background="#674636"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.552" />
+        android:id="@+id/app"
+        android:layout_width="1281dp"
+        android:layout_height="664dp"
+        android:background="#FFF8E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <View
+        android:id="@+id/brownbar"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="#674636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:background="#674636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
 
     <Button
-            android:id="@+id/settings2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#E9D0A5"
-            android:fontFamily="@font/baloo_bhaijaan"
-            android:text="Settings"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.077" />
-
-
-
-
+        android:id="@+id/settings2"
+        android:layout_width="153dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#E9D0A5"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/howtoplay"
@@ -80,10 +82,10 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/WhatamI"
@@ -97,10 +99,10 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <View
         android:id="@+id/bestview"
@@ -179,9 +181,10 @@
 
     <Button
         android:id="@+id/submitanswer"
-        android:layout_width="133dp"
-        android:layout_height="50dp"
+        android:layout_width="153dp"
+        android:layout_height="62dp"
         android:backgroundTint="#896355"
+        android:textColor="#ffffff"
         android:fontFamily="@font/baloo_bhaijaan"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
