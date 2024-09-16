@@ -1,3 +1,5 @@
+//com.example.myapplication(test) folder
+
 package com.example.myapplication
 
 import org.junit.Test
